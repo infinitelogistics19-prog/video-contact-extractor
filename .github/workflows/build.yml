@@ -1,5 +1,6 @@
-name: Build EXE
-
+- name: Build EXE
+  run: |
+    pyinstaller --onefile --noconsole --name contact_extractor dragdrop_contacts.py
 on:
   workflow_dispatch:
 
