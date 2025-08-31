@@ -20,7 +20,7 @@ jobs:
         run: |
           pyinstaller --onefile dragdrop_contacts.py
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: video-contact-extractor-exe
           path: dist/dragdrop_contacts.exe
